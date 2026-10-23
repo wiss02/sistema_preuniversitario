@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sistema universitario de inscripción">
+  <title>Preuniversitario UPEA | Inscripciones</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <a class="brand" href="#" data-view="home" aria-label="Ir al inicio">
+        <img class="brand-logo" src="upea-logo.jfif" alt="Logo de la UPEA">
+        <span>
+          <strong>Preuniversitario</strong>
+          <small>UPEA · EL ALTO</small>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#programas" data-scroll="programas">Programas</a>
+        <a href="#carreras" data-scroll="carreras">Carreras</a>
+        <a href="#proceso" data-scroll="proceso">Proceso</a>
+        <a href="#requisitos" data-scroll="requisitos">Requisitos</a>
+      </nav>
+      <button class="button button-outline" data-view="login">Ingresar</button>
+    </header>
+
+    <main>
+      <section id="home-view" class="view">
+        <section class="hero">
+          <div class="hero-copy">
+            <span class="eyebrow">Admisiones 2027 · Primera convocatoria</span>
+            <h1>Tu futuro<br><em>comienza aquí.</em></h1>
+            <p>Inicia tu camino profesional en una universidad que transforma ideas en oportunidades.</p>
+            <div class="hero-actions">
+              <button class="button button-primary" data-view="register">Comenzar inscripción <span>→</span></button>
+              <a class="text-link" href="#proceso" data-scroll="proceso">Conoce el proceso <span>↗</span></a>
+            </div>
+            <div class="hero-note"><span class="pulse"></span> Inscripciones abiertas hasta el 30 de noviembre</div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="art-circle circle-one"></div>
+            <div class="art-circle circle-two"></div>
+            <div class="art-card">
+              <span class="art-number">01</span>
+              <span class="art-label">Explora<br>tu potencial</span>
+              <span class="art-arrow">↗</span>
+            </div>
+            <div class="art-stamp">UPEA<br><small>EL ALTO</small></div>
+          </div>
+        </section>
+
+        <section class="stats">
+          <div><strong>37</strong><span>Carreras disponibles</span></div>
+          <div><strong>9</strong><span>Áreas académicas</span></div>
+          <div><strong>UPEA</strong><span>Universidad pública de El Alto</span></div>
+        </section>
+
+        <section id="programas" class="content-section">
+          <div class="section-heading">
+            <div><span class="eyebrow">Encuentra tu camino</span><h2>Programas que<br><em>inspiran.</em></h2></div>
+            <p>Elige la carrera que conecta tus talentos con el mundo que quieres construir.</p>
+          </div>
+          <div class="program-grid">
+            <article class="program-card"><span class="program-icon">✦</span><span>Ingeniería y tecnología</span><strong>12 programas <b>↗</b></strong></article>
+            <article class="program-card"><span class="program-icon">◒</span><span>Ciencias económicas</span><strong>8 programas <b>↗</b></strong></article>
+            <article class="program-card"><span class="program-icon">⌁</span><span>Humanidades y diseño</span><strong>10 programas <b>↗</b></strong></article>
+          </div>
+        </section>
+
+        <section id="carreras" class="careers-section content-section">
+          <div class="section-heading">
+            <div><span class="eyebrow">Oferta académica UPEA</span><h2>Elige tu<br><em>carrera.</em></h2></div>
+            <p>Conoce algunas de las carreras de la Universidad Pública de El Alto, organizadas por área de formación.</p>
+          </div>
+          <div class="career-grid">
+            <article class="career-card"><span class="career-index">01</span><h3>Ingenierías y tecnología</h3><p>Ingeniería de Sistemas · Civil · Ambiental · Electrónica · Eléctrica · Autotrónica · Textil · Gas y Petroquímica</p></article>
+            <article class="career-card"><span class="career-index">02</span><h3>Ciencias económicas</h3><p>Administración de Empresas · Contaduría Pública · Economía · Comercio Internacional · Gestión Turística y Hotelera</p></article>
+            <article class="career-card"><span class="career-index">03</span><h3>Ciencias de la salud</h3><p>Medicina · Enfermería · Nutrición y Dietética</p></article>
+            <article class="career-card"><span class="career-index">04</span><h3>Ciencias sociales</h3><p>Psicología · Sociología · Trabajo Social · Comunicación Social · Historia · Lingüística e Idiomas</p></article>
+            <article class="career-card"><span class="career-index">05</span><h3>Educación y humanidades</h3><p>Ciencias de la Educación · Educación Parvularia · Psicomotricidad y Deportes · Música</p></article>
+            <article class="career-card"><span class="career-index">06</span><h3>Hábitat, agro y veterinaria</h3><p>Arquitectura · Artes Plásticas · Ingeniería Agronómica · Medicina Veterinaria y Zootecnia</p></article>
+          </div>
+          <a class="source-link" href="https://www.upea.bo/Carreras" target="_blank" rel="noopener">Consultar la oferta completa en el sitio oficial de la UPEA ↗</a>
+        </section>
+
+        <section id="proceso" class="process-section">
+          <div class="section-heading"><div><span class="eyebrow">Así de simple</span><h2>Tu inscripción<br>en <em>4 pasos.</em></h2></div></div>
+          <div class="steps">
+            <div><span>01</span><strong>Crea tu cuenta</strong><p>Regístrate con tus datos básicos.</p></div>
+            <div><span>02</span><strong>Completa tu perfil</strong><p>Cuéntanos sobre ti y tu formación.</p></div>
+            <div><span>03</span><strong>Carga tus documentos</strong><p>Adjunta los requisitos solicitados.</p></div>
+            <div><span>04</span><strong>Recibe tu resultado</strong><p>Consulta el estado desde tu panel.</p></div>
+          </div>
+        </section>
+
+        <section id="requisitos" class="requirements content-section">
+          <div><span class="eyebrow">Antes de comenzar</span><h2>Ten todo<br><em>listo.</em></h2></div>
+          <ul><li>Documento de identidad vigente</li><li>Diploma o acta de grado</li><li>Resultado de examen de admisión</li><li>Fotografía tipo documento</li></ul>
+          <button class="button button-dark" data-view="register">Iniciar ahora <span>→</span></button>
+        </section>
+      </section>
+
+      <section id="login-view" class="view auth-view hidden">
+        <div class="auth-card">
+          <span class="eyebrow">Portal universitario</span><h1>Bienvenido<br><em>de nuevo.</em></h1>
+          <p>Ingresa a tu cuenta para continuar tu proceso de inscripción.</p>
+          <form id="login-form">
+            <label>Tipo de usuario<select id="login-role" required><option value="student">Estudiante</option><option value="teacher">Docente</option><option value="admin">Encargado</option></select></label>
+            <label>Correo electrónico<input type="email" id="login-email" placeholder="tu@correo.com" required></label>
+            <label>Contraseña<input type="password" placeholder="••••••••" required></label>
+            <div class="form-row"><label class="check"><input type="checkbox"> Recordarme</label><a href="#">¿Olvidaste tu contraseña?</a></div>
+            <button class="button button-primary full" type="submit">Ingresar <span>→</span></button>
+          </form>
+          <p class="auth-footer">¿Aún no tienes una cuenta? <button data-view="register">Regístrate aquí</button></p>
+          <button class="back-link" data-view="home">← Volver al inicio</button>
+        </div>
+      </section>
+
+      <section id="register-view" class="view auth-view hidden">
+        <div class="auth-card register-card">
+          <span class="eyebrow">Primer paso</span><h1>Empieza tu<br><em>historia.</em></h1>
+          <p>Crea tu cuenta de estudiante en menos de dos minutos.</p>
+          <form id="register-form">
+            <div class="two-columns"><label>Nombres<input type="text" placeholder="Tus nombres" required></label><label>Apellidos<input type="text" placeholder="Tus apellidos" required></label></div>
+            <label>Correo electrónico<input type="email" placeholder="tu@correo.com" required></label>
+            <label>Tipo de documento<select required><option value="">Selecciona una opción</option><option>Cédula de ciudadanía</option><option>Tarjeta de identidad</option><option>Pasaporte</option></select></label>
+            <label>Número de documento<input type="text" placeholder="Número de documento" required></label>
+            <label>Contraseña<input type="password" placeholder="Mínimo 8 caracteres" minlength="8" required></label>
+            <label class="check terms"><input type="checkbox" required> Acepto el tratamiento de mis datos personales</label>
+            <button class="button button-primary full" type="submit">Crear mi cuenta <span>→</span></button>
+          </form>
+          <p class="auth-footer">¿Ya tienes una cuenta? <button data-view="login">Inicia sesión</button></p>
+          <button class="back-link" data-view="home">← Volver al inicio</button>
+        </div>
+      </section>
+
+      <section id="student-view" class="view dashboard-view hidden">
+        <div class="dashboard-shell">
+          <aside class="sidebar"><a class="brand" href="#" data-view="home"><img class="brand-logo" src="upea-logo.jfif" alt="Logo de la UPEA"><span><strong>Preuniversitario</strong><small>UPEA · EL ALTO</small></span></a><div class="user-mini"><span>JD</span><div><strong>Juan David</strong><small>Estudiante</small></div></div><nav><button class="active">▦ <span>Resumen</span></button><button>◌ <span>Mi inscripción</span></button><button>□ <span>Documentos</span></button><button>♧ <span>Notificaciones</span></button></nav><button class="logout" data-view="home">↪ Cerrar sesión</button></aside>
+          <div class="dashboard-content"><div class="dashboard-top"><div><span class="eyebrow">Portal del estudiante</span><h1>Hola, Juan <em>👋</em></h1></div><button class="avatar">JD</button></div><div class="alert-banner"><span>✦</span><div><strong>Tu inscripción está casi lista</strong><p>Completa los documentos pendientes para enviar tu solicitud.</p></div><button class="button button-dark small" data-scroll-panel="enrollment-panel">Continuar →</button></div><div class="dashboard-grid"><div class="panel progress-panel"><div class="panel-title"><h3>Progreso de inscripción</h3><span>75%</span></div><div class="progress"><i></i></div><div class="progress-items"><div class="done">✓ <span>Datos personales</span></div><div class="done">✓ <span>Información académica</span></div><div class="pending">3 <span>Documentos</span><b>Pendiente</b></div><div>4 <span>Confirmación</span></div></div></div><div class="panel status-panel"><span class="eyebrow">Estado actual</span><div class="status-dot"></div><h3>En borrador</h3><p>Tu solicitud aún no ha sido enviada.</p><button class="text-link">Ver detalles ↗</button></div></div><div class="panel next-panel"><div><span class="eyebrow">Siguiente paso</span><h3>Sube tus documentos</h3><p>Necesitamos 2 documentos para continuar con la revisión.</p></div><button class="button button-primary small" data-scroll-panel="documents-panel">Ir a documentos →</button></div><div id="enrollment-panel" class="workflow-grid"><div class="panel workflow-card"><span class="eyebrow">01 · Programa</span><h3>Elige tu carrera</h3>          <select id="program-select"><option>Selecciona una carrera</option><option>Medicina</option><option>Enfermería</option><option>Ingeniería de Sistemas</option><option>Ingeniería Civil</option><option>Ingeniería Ambiental</option><option>Administración de Empresas</option><option>Contaduría Pública</option><option>Psicología</option><option>Comunicación Social</option><option>Arquitectura</option><option>Ingeniería Agronómica</option><option>Medicina Veterinaria y Zootecnia</option><option>Odontología</option></select><span class="eyebrow">Materias a tomar</span><div class="subject-list"><label><input type="checkbox" checked> Matemática</label><label><input type="checkbox" checked> Lenguaje</label><label><input type="checkbox"> Ciencias naturales</label><label><input type="checkbox"> Introducción profesional</label></div></div><div class="panel workflow-card"><span class="eyebrow">02 · Horario</span><h3>Tu horario seleccionado</h3><table class="compact-table"><tr><th>Materia</th><th>Día</th><th>Hora</th></tr><tr><td>Matemática</td><td>Lun / Mié</td><td>08:00</td></tr><tr><td>Lenguaje</td><td>Mar / Jue</td><td>10:00</td></tr><tr><td>Ciencias</td><td>Viernes</td><td>08:00</td></tr></table><button class="button button-primary small save-enrollment">Guardar materias y horario</button></div></div><div id="documents-panel" class="panel documents-panel"><div class="panel-title"><div><span class="eyebrow">03 · Requisitos</span><h3>Documentos a presentar</h3></div><span class="table-status review">1 observado</span></div><div class="document-row"><div><strong>Documento de identidad</strong><small>cedula_juan.pdf · 1.2 MB</small></div><span class="table-status approved">Validado</span></div><div class="document-row"><div><strong>Certificado de habilitación</strong><small>Sube el certificado hasta primer semestre habilitado</small></div><label class="upload-button">Seleccionar archivo<input type="file" hidden></label></div><div class="observation">Observación del encargado: La fotografía del documento no es legible. Vuelve a cargarla.</div></div><div class="payment-row"><div class="panel"><span class="eyebrow">04 · Pago</span><h3>Derecho de inscripción</h3><p class="price">$ 150.000</p><button class="button button-dark small" id="pay-button">Pagar inscripción</button></div><div class="panel"><span class="eyebrow">05 · Matrícula</span><h3>Genera tu matrícula</h3><p>Completa los pasos para descargar tu constancia.</p><button class="button button-primary small" id="certificate-button">Generar matrícula</button></div></div></div></div>
+        </div>
+      </section>
+
+      <section id="teacher-view" class="view dashboard-view hidden">
+        <div class="dashboard-shell"><aside class="sidebar"><a class="brand" href="#" data-view="home"><img class="brand-logo" src="upea-logo.jfif" alt="Logo de la UPEA"><span><strong>Preuniversitario</strong><small>UPEA · EL ALTO</small></span></a><div class="user-mini"><span>MG</span><div><strong>María González</strong><small>Docente habilitada</small></div></div><nav><button class="active">▦ <span>Mis materias</span></button><button>◎ <span>Notas</span></button><button>□ <span>Estudiantes</span></button></nav><button class="logout" data-view="home">↪ Cerrar sesión</button></aside><div class="dashboard-content"><div class="dashboard-top"><div><span class="eyebrow">Portal docente</span><h1>Mis materias <em>habilitadas.</em></h1></div><button class="avatar">MG</button></div><div class="panel table-panel"><div class="panel-title"><div><h3>Registro de notas</h3><p class="muted">Solo puedes calificar materias asignadas para el periodo actual.</p></div><span class="table-status approved">1er semestre</span></div><div class="table-wrap"><table><thead><tr><th>Estudiante</th><th>Materia</th><th>Nota final</th><th>Estado</th><th></th></tr></thead><tbody><tr><td><b>Juan David</b><small>1002456</small></td><td>Matemática</td><td><input class="grade-input" value="4.5" type="number" min="0" max="5" step=".1"></td><td><span class="table-status approved">Habilitado</span></td><td><button class="button button-primary small save-grade">Guardar</button></td></tr><tr><td><b>Laura Gómez</b><small>1001987</small></td><td>Matemática</td><td><input class="grade-input" value="3.8" type="number" min="0" max="5" step=".1"></td><td><span class="table-status approved">Habilitado</span></td><td><button class="button button-primary small save-grade">Guardar</button></td></tr></tbody></table></div></div><div class="panel certificate-box"><span class="eyebrow">Certificado de habilitación</span><h3>Consulta quién puede continuar</h3><p>El sistema habilita al estudiante cuando aprueba las materias del primer semestre.</p><span class="table-status approved">Juan David · Habilitado hasta primer semestre</span></div></div></div>
+      </section>
+
+      <section id="admin-view" class="view dashboard-view hidden">
+        <div class="dashboard-shell">
+          <aside class="sidebar">
+            <a class="brand" href="#" data-view="home">
+              <img class="brand-logo" src="upea-logo.jfif" alt="Logo de la UPEA">
+              <span><strong>Preuniversitario</strong><small>UPEA · EL ALTO</small></span>
+            </a>
+            <div class="user-mini">
+              <span id="admin-user-avatar">WA</span>
+              <div>
+                <strong id="admin-user-name">Wilson</strong>
+                <small id="admin-user-role">Administrador Principal</small>
+              </div>
+            </div>
+            <nav>
+              <button class="active" data-admin-nav="overview">▦ <span>Resumen</span></button>
+              <button data-admin-nav="users">👥 <span>Gestión de Usuarios</span></button>
+              <button data-admin-nav="docs">□ <span>Documentos</span></button>
+            </nav>
+            <button class="logout" data-view="home">↪ Cerrar sesión</button>
+          </aside>
+          
+          <div class="dashboard-content">
+            <div class="dashboard-top">
+              <div>
+                <span class="eyebrow">Panel de Administración General</span>
+                <h1 id="admin-greeting">Hola, Wilson <em>👋</em></h1>
+              </div>
+              <button class="avatar" id="admin-top-avatar">WA</button>
+            </div>
+
+            <!-- Sección de Métricas Generales -->
+            <div class="admin-stats">
+              <div class="panel"><span>Inscripciones totales</span><strong>248</strong><small class="positive">↑ 12% este mes</small></div>
+              <div class="panel"><span>Documentos en revisión</span><strong>42</strong><small class="warning">Requieren atención</small></div>
+              <div class="panel"><span>Aprobadas</span><strong>156</strong><small class="positive">↑ 8% este mes</small></div>
+              <div class="panel"><span>Usuarios en el Sistema</span><strong id="total-users-stat">251</strong><small class="positive">3 roles activos</small></div>
+            </div>
+
+            <!-- Panel de Gestión y Registro de Nuevos Usuarios -->
+            <div id="admin-users-section" class="panel" style="margin-bottom: 25px;">
+              <div class="panel-title" style="margin-bottom: 15px;">
+                <div>
+                  <span class="eyebrow">Control de Accesos</span>
+                  <h3>Registrar Nuevo Usuario</h3>
+                </div>
+                <span class="table-status approved">Acceso Administrador</span>
+              </div>
+              <p class="muted" style="margin-top: -5px; margin-bottom: 18px;">
+                Como administrador principal, puedes dar de alta a nuevos <strong>Estudiantes</strong>, <strong>Docentes</strong> o <strong>Encargados</strong>. Los datos se sincronizan con la base de datos PostgreSQL.
+              </p>
+
+              <form id="create-user-form" style="background: #f7f9f6; padding: 20px; border: 1px solid var(--line); border-radius: 6px; margin-bottom: 25px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px;">
+                  <label style="font-size: 11px; font-weight: 600; color: var(--dark);">
+                    Rol del nuevo usuario:
+                    <select id="new-user-role" required style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid var(--line); background: white;">
+                      <option value="ESTUDIANTE">🎓 Estudiante (Postulante)</option>
+                      <option value="DOCENTE">👨‍🏫 Docente (Calificador)</option>
+                      <option value="ADMIN">🛡️ Encargado / Administrador</option>
+                    </select>
+                  </label>
+
+                  <label style="font-size: 11px; font-weight: 600; color: var(--dark);">
+                    Nombres:
+                    <input type="text" id="new-user-nombres" placeholder="Ej. Carlos Rodrigo" required style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid var(--line); background: white;">
+                  </label>
+
+                  <label style="font-size: 11px; font-weight: 600; color: var(--dark);">
+                    Apellidos:
+                    <input type="text" id="new-user-apellidos" placeholder="Ej. Mamani Choque" required style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid var(--line); background: white;">
+                  </label>
+
+                  <label style="font-size: 11px; font-weight: 600; color: var(--dark);">
+                    Correo electrónico:
+                    <input type="email" id="new-user-email" placeholder="usuario@correo.com" required style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid var(--line); background: white;">
+                  </label>
+
+                  <label style="font-size: 11px; font-weight: 600; color: var(--dark);">
+                    Cédula / Documento:
+                    <div style="display: flex; gap: 6px; margin-top: 5px;">
+                      <input type="text" id="new-user-ci" placeholder="Número CI" required style="flex: 2; padding: 10px; border: 1px solid var(--line); background: white;">
+                      <select id="new-user-exp" style="flex: 1; padding: 10px; border: 1px solid var(--line); background: white;">
+                        <option value="LP">LP</option><option value="CB">CB</option><option value="SC">SC</option>
+                        <option value="OR">OR</option><option value="PT">PT</option><option value="TJ">TJ</option>
+                        <option value="CH">CH</option><option value="BE">BE</option><option value="PD">PD</option>
+                      </select>
+                    </div>
+                  </label>
+
+                  <label style="font-size: 11px; font-weight: 600; color: var(--dark);">
+                    Contraseña temporal:
+                    <input type="text" id="new-user-password" value="1234" required style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid var(--line); background: white; font-family: monospace;">
+                  </label>
+
+                  <label id="dynamic-field-label" style="font-size: 11px; font-weight: 600; color: var(--dark); grid-column: 1 / -1;">
+                    <span id="dynamic-field-title">Carrera a postular:</span>
+                    <input type="text" id="new-user-extra" placeholder="Ej. Medicina / Ingeniería de Sistemas" required style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid var(--line); background: white;">
+                  </label>
+                </div>
+
+                <div style="margin-top: 16px; display: flex; justify-content: flex-end;">
+                  <button type="submit" class="button button-primary" style="padding: 12px 24px;">
+                    Registrar Usuario en el Sistema <span>+</span>
+                  </button>
+                </div>
+              </form>
+
+              <!-- Tabla de Usuarios Registrados -->
+              <div class="panel-title" style="margin-top: 10px;">
+                <h3>Usuarios Registrados en el Sistema</h3>
+                <span class="muted" id="user-count-badge">6 usuarios principales</span>
+              </div>
+              <div class="table-wrap">
+                <table id="users-table">
+                  <thead>
+                    <tr>
+                      <th>Usuario</th>
+                      <th>Correo</th>
+                      <th>Documento</th>
+                      <th>Rol</th>
+                      <th>Detalle / Carrera</th>
+                      <th>Estado</th>
+                    </tr>
+                  </thead>
+                  <tbody id="users-table-body">
+                    <tr>
+                      <td><b>Wilson</b><small>WA</small></td>
+                      <td>wilson@hotmail.com</td>
+                      <td>10000001 LP</td>
+                      <td><span class="table-status" style="background: #27372d; color: #c4e679;">ADMIN</span></td>
+                      <td>Administrador Principal</td>
+                      <td><span class="table-status approved">Activo</span></td>
+                    </tr>
+                    <tr>
+                      <td><b>Andrea Méndez</b><small>AM</small></td>
+                      <td>andrea.mendez@upea.bo</td>
+                      <td>5938102 LP</td>
+                      <td><span class="table-status" style="background: #27372d; color: #c4e679;">ADMIN</span></td>
+                      <td>Encargada de Admisiones</td>
+                      <td><span class="table-status approved">Activo</span></td>
+                    </tr>
+                    <tr>
+                      <td><b>María González</b><small>MG</small></td>
+                      <td>maria.gonzalez@upea.bo</td>
+                      <td>6128490 LP</td>
+                      <td><span class="table-status" style="background: #e1edf8; color: #205c90;">DOCENTE</span></td>
+                      <td>Docente · Matemática</td>
+                      <td><span class="table-status approved">Activo</span></td>
+                    </tr>
+                    <tr>
+                      <td><b>Juan David Pérez</b><small>1002456</small></td>
+                      <td>juan.d@email.com</td>
+                      <td>8492019 LP</td>
+                      <td><span class="table-status" style="background: #f4faeb; color: #587d29;">ESTUDIANTE</span></td>
+                      <td>Medicina</td>
+                      <td><span class="table-status review">En proceso</span></td>
+                    </tr>
+                    <tr>
+                      <td><b>Laura Gómez Morales</b><small>1001987</small></td>
+                      <td>laura.gomez@email.com</td>
+                      <td>7391024 LP</td>
+                      <td><span class="table-status" style="background: #f4faeb; color: #587d29;">ESTUDIANTE</span></td>
+                      <td>Ingeniería de Sistemas</td>
+                      <td><span class="table-status approved">Habilitada</span></td>
+                    </tr>
+                    <tr>
+                      <td><b>Sofía Torres Callisaya</b><small>1003112</small></td>
+                      <td>sofia.t@email.com</td>
+                      <td>9120384 LP</td>
+                      <td><span class="table-status" style="background: #f4faeb; color: #587d29;">ESTUDIANTE</span></td>
+                      <td>Derecho</td>
+                      <td><span class="table-status pending-status">Pendiente</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Panel de Documentos por revisar -->
+            <div id="admin-docs-section" class="panel table-panel">
+              <div class="panel-title">
+                <h3>Documentos por revisar</h3>
+                <button class="text-link">Ver todas ↗</button>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Estudiante</th>
+                      <th>Documento</th>
+                      <th>Programa</th>
+                      <th>Estado</th>
+                      <th>Acción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><b>Juan David</b><small>juan.d@email.com</small></td>
+                      <td>Certificado de habilitación</td>
+                      <td>Medicina</td>
+                      <td><span class="table-status review">En revisión</span></td>
+                      <td><button class="button button-primary small review-button">Revisar</button></td>
+                    </tr>
+                    <tr>
+                      <td><b>Laura Gómez</b><small>laura.gomez@email.com</small></td>
+                      <td>Documento de identidad</td>
+                      <td>Ingeniería</td>
+                      <td><span class="table-status approved">Validado</span></td>
+                      <td><button class="button button-outline small">Ver</button></td>
+                    </tr>
+                    <tr>
+                      <td><b>Sofía Torres</b><small>sofia.t@email.com</small></td>
+                      <td>Fotografía</td>
+                      <td>Derecho</td>
+                      <td><span class="table-status pending-status">Faltante</span></td>
+                      <td><button class="button button-outline small">Solicitar</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="review-form hidden" id="review-form">
+                <label>Observación<textarea placeholder="Escribe una observación para el estudiante"></textarea></label>
+                <button class="button button-primary small approve-button">✓ Validar documento</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer><span>© 2026 Preuniversitario UPEA</span><span>Universidad Pública de El Alto · Construimos el futuro juntos.</span></footer>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
