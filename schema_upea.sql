@@ -410,22 +410,10 @@ JOIN dias_semana ds ON h.dia_id = ds.id
 JOIN aulas a ON h.aula_id = a.id;
 
 -- =====================================================================
--- 9. USUARIO ADMINISTRADOR PRINCIPAL
+-- 9. NOTA DE SEGURIDAD
 -- =====================================================================
-INSERT INTO usuarios (
-    rol_id, tipo_documento_id, numero_documento, expedicion_id, 
-    email, password_hash, nombres, apellidos, telefono, avatar_iniciales, activo
-) VALUES (
-    (SELECT id FROM roles WHERE codigo = 'ADMIN'), 
-    (SELECT id FROM tipos_documento WHERE codigo = 'CI'), 
-    '10000001', 
-    (SELECT id FROM departamentos WHERE codigo = 'LP'), 
-    'wilson@hotmail.com', 
-    '1234', 
-    'Wilson', 
-    'Administrador Principal', 
-    '+591 70000000', 
-    'WA', 
-    TRUE
-) ON CONFLICT (email) DO NOTHING;
+-- No se incluyen contraseñas ni usuarios predeterminados.
+-- La versión Flask crea sus tablas activas por separado, almacena hashes
+-- seguros y permite el alta del primer admin mediante variables de entorno.
+-- Este esquema histórico es una referencia para migraciones futuras.
 
